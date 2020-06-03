@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+</head>
+<body>
+    <script>
+        // son funciones que existe dentro de un objecto
+        var auto={}
+        auto.color ="blanco";
+        auto.dueno ="julieth";
+        auto.marca ="Gato";
+        auto.saludo= function(){
+            document.write(this.dueno + "  tiene un " + this.marca + "   color    " + this.color)
+        }
+        auto.saludo()
+    </script>
+    
+</body>
+</html>

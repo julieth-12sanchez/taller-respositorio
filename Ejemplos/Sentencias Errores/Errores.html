@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errores</title>
+</head>
+<body>
+   
+        <label>numero1</label>
+        <input type= "test" id ="numero1"/>
+        <label>numero2</label>
+        <input type= "test" id ="numero2"/>
+        <button onclick="dividir()"> dividir </button>
+
+ <script>
+
+
+        function dividir() {
+            
+           var a = document.getElementById("Introducir un numero");
+           var b = document.getElementById("Introducir un numero");
+           
+           try{
+            if (b==0){
+               throw "has colocado el numero invalido";
+
+           }
+           var resultado=a/b;
+           console.log(resultado);
+           
+           
+           } catch(error){
+           console.error(error);
+        }
+            
+        }
+    </script>
+</body>
+</html>

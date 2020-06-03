@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contructor</title>
+</head>
+<body>
+    <script>
+         function(nom , e){
+            this.nombre=nom;
+            this.edad=e;
+
+            this.hablar = function(){
+                var mag ="hola me llamo " +this.nombre  + "y tengo "  + this.edad +"años";
+           alert(mag);
+            }
+        }
+
+        var persona1 = new persona ("julis", 22);
+        
+        var persona2 = new persona ("yesi", 21);
+        persona1.hablar();
+        persona2.hablar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia</title>
+</head>
+<body>
+    <script>
+       
+        class persona{
+            constructor(nombre){
+                this.nombre = nombre
+            }
+         apellidos(apellidos){
+             this.apellidos = apellidos
+         }
+        }
+
+        class Profesor extends persona{
+             constructor(nombre,id){
+             super(nombre)
+
+             this.nombre =nombre
+             this.clave = id
+             }
+        }
+        var profesor = new Profesor("julieth",12345)
+        profesor.apellidos("sanchez cardozo")
+        console.log(profesor)
+    </script>
+    
+</body>
+</html>
